@@ -32,7 +32,7 @@ app.title = "NGO Impact Dashboard"
 
 # Load datasets
 def load_data():
-    data_dir = os.path.join(os.path.dirname(__file__), '..', 'data')
+    data_dir = os.path.join(os.path.dirname(__file__), './', 'data')
     return {
         'aurevia': pd.read_csv(os.path.join(data_dir, 'AureviaInternationalHoldings.csv')),
         'csr_main': pd.read_csv(os.path.join(data_dir, 'CSR_Main_Table.csv')),
